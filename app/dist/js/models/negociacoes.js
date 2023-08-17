@@ -8,4 +8,7 @@ export class Negociacoes {
     lista() {
         return [...this.negociacoes];
     }
+    ehIgual(negociacoes) {
+        return (JSON.stringify(this.negociacoes) === JSON.stringify(negociacoes.lista()));
+    }
 }
